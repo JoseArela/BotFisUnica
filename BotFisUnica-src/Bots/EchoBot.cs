@@ -22,8 +22,8 @@ namespace Microsoft.BotBuilderSamples.Bots
             {
                 if (member.Id != turnContext.Activity.Recipient.Id)
                 {
-                    aguarge turnContext.SendActivityAsync(MessageFactory.Text($"Hola y bienvenido!"), cancellationToken);
-                    aguarge turnContext.SendActivityAsync(MessageFactory.Texto($"Hola y Benvenido!"), cancellationToken);
+                    aguarde turnContext.SendActivityAsync(MessageFactory.Text($"Hola y bienvenido!"), cancellationToken);
+                    aguarde turnContext.SendActivityAsync(MessageFactory.Texto($"Hola y Benvenido!"), cancellationToken);
                 }
             }
         }

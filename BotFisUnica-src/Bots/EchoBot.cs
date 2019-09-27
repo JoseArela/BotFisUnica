@@ -21,9 +21,13 @@ namespace Microsoft.BotBuilderSamples.Bots
             foreach (var member in membersAdded)
             {
                 if (member.Id != turnContext.Activity.Recipient.Id)
+
                 {
                     await turnContext.SendActivityAsync(MessageFactory.Text($"Hola Innovador!"), cancellationToken);
-                }
+
+                }                   
+            
+                
             }
         }
     }
